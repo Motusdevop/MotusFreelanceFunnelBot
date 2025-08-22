@@ -14,6 +14,18 @@ async def main():
     dp = Dispatcher()
     dp.include_router(commands_router)
     logging.info('Bot started')
+    updates = await bot.get_updates()
+
+    chats = list()
+    if updates:
+        for update in updates:
+            if update.message.chat.id not in chats:
+                chats.append(update.message.chat.id)
+
+    for chat in chats:
+        await bot.send_message(text='Бот восстановил свою работу! Простите за неудобства!', chat_id=chat)
+
+    await bot.delete_webhook(drop_pending_updates=True)
     await dp.start_polling(bot)
 
 

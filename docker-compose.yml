@@ -1,0 +1,14 @@
+services:
+  telegram-bot:
+    build:
+      context: ./bot
+
+    container_name: aiogram-bot
+
+    volumes:
+      - ./logs:/code/logs
+
+    env_file:
+      - ./.env
+
+    restart: always

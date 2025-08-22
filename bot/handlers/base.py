@@ -14,6 +14,7 @@ from content.ru.texts import start_text, develompent_text, training_text, about_
 from content.ru.keyboards import MenuInlineKeyboard, BackToMenuInlineKeyboard, FormInlineKeyboard
 
 from utils import funnel
+from utils.google_sheet import GoogleSheet
 
 router = Router()
 
@@ -36,10 +37,6 @@ async def start(message: Message, state: FSMContext):
     logging.info('CommandStart: %s', client_data_to_str(client_data))
     await funnel.send_message_to_admins(bot=message.bot, text='*CommandStart:*\n' + client_data_to_str(client_data))
 
-    # try:
-    #     await message.edit_text(text=start_text)
-    #     await message.edit_reply_markup(reply_markup=MenuInlineKeyboard.markup)
-    # except TelegramBadRequest:
     await message.answer(text=start_text, reply_markup=MenuInlineKeyboard.markup)
 
 
@@ -69,6 +66,15 @@ async def button_callback(callback_query: CallbackQuery):
             await callback_query.message.edit_text(text=about_text)
             await callback_query.message.edit_reply_markup(reply_markup=BackToMenuInlineKeyboard.markup)
         case 'reviews':
+            reviews_gs = GoogleSheet(settings.credentials_path, settings.sheet_name, 2)
+
+            reviews = reviews_gs.read_all_records()
+
+            await callback_query.message.edit_text(text='Отзыв:')
+            await callback_query.message.edit_reply_markup(reply_markup=BackToMenuInlineKeyboard.markup)
+        case 'reviews_next':
+            ...
+        case 'reviews_prev':
             ...
         case 'feedback':
             logging.info('button click feedback')

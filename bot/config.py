@@ -11,9 +11,14 @@ class Settings(BaseSettings):
     token: SecretStr
     admins: list[int]
 
+    # Google Forms
     development_form_url: str
     training_form_url: str
     feedback_form_url: str
+
+    # Google Sheets
+    credentials_path: str
+    sheet_name: str
 
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
 
