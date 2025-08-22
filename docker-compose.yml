@@ -6,7 +6,8 @@ services:
     container_name: aiogram-bot
 
     volumes:
-      - ./logs:/code/logs
+      - ./logs:/app/logs
+      - ./credentials.json:/app/credentials.json
 
     env_file:
       - ./.env
