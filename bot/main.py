@@ -19,8 +19,9 @@ async def main():
     chats = list()
     if updates:
         for update in updates:
-            if update.message.chat.id not in chats:
-                chats.append(update.message.chat.id)
+            if update.message:
+                if update.message.chat.id not in chats:
+                    chats.append(update.message.chat.id)
 
     for chat in chats:
         await bot.send_message(text='Бот восстановил свою работу! Простите за неудобства!', chat_id=chat)

@@ -70,7 +70,19 @@ async def button_callback(callback_query: CallbackQuery):
 
             reviews = reviews_gs.read_all_records()
 
-            await callback_query.message.edit_text(text='Отзыв:')
+            review = reviews.pop(0)
+
+            text = f"""Последний отзыв:
+{review['Имя']} {review['Оценка']}/5:
+Услуга: {review['Услуга']}
+
+Отзыв:
+{review['Отзыв']}
+
+Дата:
+{review['Дата']}"""
+
+            await callback_query.message.edit_text(text=text)
             await callback_query.message.edit_reply_markup(reply_markup=BackToMenuInlineKeyboard.markup)
         case 'reviews_next':
             ...
