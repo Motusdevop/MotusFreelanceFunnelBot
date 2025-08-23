@@ -1,6 +1,7 @@
 import logging
 from datetime import datetime
 
+import models
 from config import settings
 
 from aiogram import F, Router
@@ -15,6 +16,7 @@ from content.ru.keyboards import MenuInlineKeyboard, BackToMenuInlineKeyboard, F
 
 from utils import funnel
 from utils.google_sheet import GoogleSheet
+from utils.storage import UserTable
 
 router = Router()
 
@@ -26,18 +28,27 @@ def client_data_to_str(client_data: dict):
 
 @router.message(CommandStart())
 async def start(message: Message, state: FSMContext):
-    client_data = {
-        'id': message.from_user.id,
-        'first_name': message.from_user.first_name,
-        'last_name': message.from_user.last_name,
-        'username': message.from_user.username,
-        'datetime': datetime.now().strftime('%d.%m %H:%M'),
-    }
-
-    logging.info('CommandStart: %s', client_data_to_str(client_data))
-    await funnel.send_message_to_admins(bot=message.bot, text='*CommandStart:*\n' + client_data_to_str(client_data))
+    logging.info('command start')
 
     await message.answer(text=start_text, reply_markup=MenuInlineKeyboard.markup)
+
+    client = models.User(
+        chat_id=message.from_user.id,
+        first_name=message.from_user.first_name,
+        last_name=message.from_user.last_name,
+        username=message.from_user.username,
+        last_activity=datetime.now().strftime('%d.%m %H:%M'))
+
+    flag = True
+
+    for user in UserTable.table:
+        if user.chat_id == client.chat_id:
+            flag = False
+            break
+
+    if flag:
+        UserTable.append(client)
+        logging.info('new user')
 
 
 @router.callback_query()
@@ -66,7 +77,7 @@ async def button_callback(callback_query: CallbackQuery):
             await callback_query.message.edit_text(text=about_text)
             await callback_query.message.edit_reply_markup(reply_markup=BackToMenuInlineKeyboard.markup)
         case 'reviews':
-            reviews_gs = GoogleSheet(settings.credentials_path, settings.sheet_name, 2)
+            reviews_gs = GoogleSheet(settings.credentials_path, settings.sheet_name, settings.REVIEWS_WORKSHEET_INDEX)
 
             reviews = reviews_gs.read_all_records()
 

@@ -9,11 +9,18 @@ TOKEN = settings.token.get_secret_value()
 
 bot = Bot(token=TOKEN, default=default_bot_properties)
 
+def on_startup_callback(dispatcher: Dispatcher):
+    logging.info('BOT STARTING...')
+    ...
+    logging.info('BOT STARTED!.')
+
+
 
 async def main():
     dp = Dispatcher()
     dp.include_router(commands_router)
-    logging.info('Bot started')
+
+    dp.startup.register(on_startup_callback)
     updates = await bot.get_updates()
 
     chats = list()

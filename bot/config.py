@@ -20,6 +20,10 @@ class Settings(BaseSettings):
     credentials_path: str
     sheet_name: str
 
+    # worksheets
+    REVIEWS_WORKSHEET_INDEX: int
+    USERS_WORKSHEET_INDEX: int
+
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
 
 

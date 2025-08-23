@@ -43,9 +43,10 @@ class GoogleSheet:
         except Exception as e:
             raise Exception(f"Ошибка при обновлении ячейки: {e}")
 
+
 if __name__ == "__main__":
     # Настройки
-    CREDS_FILE = "credentials.json"
+    CREDS_FILE = "../../credentials.json"
     SHEET_NAME = "Test"
 
     # Создаём объект
