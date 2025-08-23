@@ -5,5 +5,5 @@ class User(BaseModel):
     chat_id: int
     first_name: str | None
     last_name: str | None
-    username: str
+    username: str | None
     last_activity: str

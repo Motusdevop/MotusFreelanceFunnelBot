@@ -36,7 +36,7 @@ async def start(message: Message, state: FSMContext):
         chat_id=message.from_user.id,
         first_name=message.from_user.first_name,
         last_name=message.from_user.last_name,
-        username=message.from_user.username,
+        username='@' + message.from_user.username,
         last_activity=datetime.now().strftime('%d.%m %H:%M'))
 
     flag = True
