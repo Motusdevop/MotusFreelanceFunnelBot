@@ -1,4 +1,6 @@
-from pydantic import BaseModel, Field
+from datetime import datetime
+
+from pydantic import BaseModel
 
 
 class User(BaseModel):
@@ -6,4 +8,15 @@ class User(BaseModel):
     first_name: str | None
     last_name: str | None
     username: str | None
-    last_activity: str
+    last_activity: datetime
+    command: str
+    callback_data: str | None
+
+
+class Review(BaseModel):
+    date: datetime
+    name: str
+    service: str
+    grade: int
+    review: str
+    additionally: str | None

@@ -1,0 +1,128 @@
+2025-09-21 11:32:43.030 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 5 строк из Test:Users
+2025-09-21 11:32:48.172 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 5 строк из Test:Users
+2025-09-21 11:32:53.806 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 5 строк из Test:Users
+2025-09-21 11:33:22.193 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 0 строк из MotusFreelance:Users
+2025-09-21 11:33:25.877 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из MotusFreelance:Отзывы
+2025-09-21 11:33:31.099 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 0 строк из MotusFreelance:Users
+2025-09-21 11:33:34.614 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из MotusFreelance:Отзывы
+2025-09-21 11:33:40.008 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 0 строк из MotusFreelance:Users
+2025-09-21 11:33:43.594 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из MotusFreelance:Отзывы
+2025-09-21 11:33:49.122 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 0 строк из MotusFreelance:Users
+2025-09-21 11:34:01.410 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 0 строк из MotusFreelance:Users
+2025-09-21 11:34:05.097 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из MotusFreelance:Отзывы
+2025-09-21 11:34:05.534 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-21 11:34:05.534 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-21 11:34:11.752 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (1 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:34:37.153 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (2 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:35:12.888 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 2 строк из MotusFreelance:Users
+2025-09-21 11:35:16.265 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из MotusFreelance:Отзывы
+2025-09-21 11:35:16.520 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-21 11:35:16.521 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-21 11:35:21.080 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (3 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:35:24.762 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (4 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:41:00.529 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 4 строк из MotusFreelance:Users
+2025-09-21 11:41:04.011 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из MotusFreelance:Отзывы
+2025-09-21 11:41:04.326 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-21 11:41:04.326 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-21 11:41:08.751 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (5 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:41:12.217 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (6 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:41:44.664 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 6 строк из MotusFreelance:Users
+2025-09-21 11:41:47.842 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из MotusFreelance:Отзывы
+2025-09-21 11:41:48.189 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-21 11:41:48.190 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-21 11:41:52.757 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (7 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:41:56.178 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (8 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:43:03.205 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 8 строк из MotusFreelance:Users
+2025-09-21 11:43:06.071 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из MotusFreelance:Отзывы
+2025-09-21 11:43:06.413 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-21 11:43:06.414 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-21 11:43:11.489 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (9 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:43:15.563 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (10 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:43:26.040 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (11 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:43:29.726 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (12 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:48:40.351 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 12 строк из MotusFreelance:Users
+2025-09-21 11:48:42.987 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из MotusFreelance:Отзывы
+2025-09-21 11:48:43.436 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-21 11:48:43.436 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-21 11:48:49.028 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (13 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:48:52.061 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (14 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:49:06.959 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (15 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:49:08.982 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (16 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:50:42.586 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 16 строк из MotusFreelance:Users
+2025-09-21 11:50:46.581 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из MotusFreelance:Отзывы
+2025-09-21 11:50:47.067 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-21 11:50:47.067 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-21 11:50:52.771 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (17 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:50:55.140 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (18 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:50:59.384 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (19 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:51:03.679 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (20 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:51:06.707 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (21 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:51:10.846 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (22 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:51:15.819 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (23 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:51:18.941 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (24 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:51:21.001 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (25 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:51:22.946 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (26 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:55:12.821 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 26 строк из MotusFreelance:Users
+2025-09-21 11:55:17.468 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 26 строк из MotusFreelance:Users
+2025-09-21 11:55:21.256 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 26 строк из MotusFreelance:Users
+2025-09-21 11:55:25.335 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 26 строк из MotusFreelance:Users
+2025-09-21 11:55:30.128 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 26 строк из MotusFreelance:Users
+2025-09-21 11:55:36.888 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 26 строк из MotusFreelance:Users
+2025-09-21 11:55:44.664 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 26 строк из MotusFreelance:Users
+2025-09-21 11:55:55.214 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 26 строк из MotusFreelance:Users
+2025-09-21 11:56:12.111 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 26 строк из MotusFreelance:Users
+2025-09-21 11:56:42.774 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 26 строк из MotusFreelance:Users
+2025-09-21 11:57:38.227 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 26 строк из MotusFreelance:Users
+2025-09-21 11:57:55.773 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 26 строк из MotusFreelance:Users
+2025-09-21 11:57:56.230 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-21 11:57:56.230 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-21 11:58:06.318 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (27 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:58:13.863 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:58:21.795 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:58:28.713 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:58:36.944 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:58:44.657 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:58:51.543 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:58:58.507 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:59:05.573 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:59:12.898 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:59:19.911 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:59:27.387 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:59:35.474 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:59:42.439 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:59:49.409 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 11:59:56.364 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:00:03.431 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:00:10.306 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:00:17.151 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:00:23.898 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:00:30.787 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:00:38.048 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:00:44.862 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:00:51.661 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:00:58.935 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:01:05.985 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:01:12.958 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:01:19.820 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:01:26.986 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:01:34.158 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:01:41.130 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:01:48.288 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:01:55.150 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:02:02.118 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:02:08.969 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:02:15.920 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:02:23.132 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:02:30.066 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:02:37.132 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:02:44.094 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:02:50.956 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:02:57.820 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:03:04.780 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:03:11.750 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:03:18.501 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:03:25.463 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (28 строк) выгружен в MotusFreelance:Users
+2025-09-21 12:04:14.912 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 28 строк из MotusFreelance:Users
+2025-09-21 12:04:15.380 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-21 12:04:15.380 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-21 12:04:19.329 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (29 строк) выгружен в MotusFreelance:Users

@@ -4,6 +4,9 @@ __pycache__/
 .env
 test.env
 
+.env.prod
+.env.dev
+
 bot/__pycache__/
 bot/handlers/__pycache__/
 bot/utils/__pycache__/
