@@ -126,3 +126,78 @@
 2025-09-21 12:04:15.380 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
 2025-09-21 12:04:15.380 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
 2025-09-21 12:04:19.329 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (29 строк) выгружен в MotusFreelance:Users
+2025-09-22 09:57:02.804 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 29 строк из MotusFreelance:Users
+2025-09-22 09:57:03.112 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-22 09:57:03.113 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-22 10:00:47.176 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 29 строк из MotusFreelance:Users
+2025-09-22 10:00:47.558 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-22 10:00:47.558 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-22 10:03:18.052 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 29 строк из MotusFreelance:Users
+2025-09-22 10:03:18.672 | INFO     | __main__:on_startup_callback:16 - BOT STARTING...
+2025-09-22 10:03:18.673 | INFO     | __main__:on_startup_callback:20 - BOT STARTED!.
+2025-09-22 10:03:23.255 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (29 строк) выгружен в MotusFreelance:Users
+2025-09-22 10:03:58.192 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 29 строк из MotusFreelance:Users
+2025-09-22 10:03:58.526 | INFO     | __main__:on_startup_callback:16 - BOT STARTING...
+2025-09-22 10:03:58.526 | INFO     | utils.repository:enable_auto_update:68 - Update date for Users enabled
+2025-09-22 10:03:58.527 | INFO     | __main__:on_startup_callback:20 - BOT STARTED!.
+2025-09-22 10:04:01.171 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (29 строк) выгружен в MotusFreelance:Users
+2025-09-22 10:11:30.504 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 29 строк из MotusFreelance:Users
+2025-09-22 10:11:30.928 | INFO     | __main__:on_startup_callback:16 - BOT STARTING...
+2025-09-22 10:11:30.929 | INFO     | utils.repository:enable_auto_update:68 - Update date for Users enabled
+2025-09-22 10:11:30.929 | INFO     | __main__:on_startup_callback:20 - BOT STARTED!.
+2025-09-22 10:11:34.249 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (29 строк) выгружен в MotusFreelance:Users
+2025-09-22 10:11:43.257 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 29 строк из MotusFreelance:Users
+2025-09-22 10:11:45.715 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из MotusFreelance:Отзывы
+2025-09-22 10:11:46.057 | INFO     | __main__:on_startup_callback:16 - BOT STARTING...
+2025-09-22 10:11:46.058 | INFO     | repository:enable_auto_update:62 - Update date for Users enabled
+2025-09-22 10:11:46.059 | INFO     | __main__:on_startup_callback:21 - BOT STARTED!.
+2025-09-22 10:11:50.353 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (29 строк) выгружен в MotusFreelance:Users
+2025-09-22 10:11:52.310 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из MotusFreelance:Отзывы
+2025-09-22 10:31:20.540 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 29 строк из MotusFreelance:Users
+2025-09-22 10:31:23.104 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из MotusFreelance:Отзывы
+2025-09-22 10:31:28.733 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 29 строк из MotusFreelance:Users
+2025-09-22 10:31:32.295 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из MotusFreelance:Отзывы
+2025-09-22 10:31:43.812 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 29 строк из MotusFreelance:Users
+2025-09-22 10:31:47.218 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из MotusFreelance:Отзывы
+2025-09-22 10:31:52.067 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 29 строк из MotusFreelance:Users
+2025-09-22 10:31:54.434 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из MotusFreelance:Отзывы
+2025-09-22 10:31:58.711 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 29 строк из MotusFreelance:Users
+2025-09-22 10:32:05.456 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 29 строк из MotusFreelance:Users
+2025-09-22 10:32:08.341 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из MotusFreelance:Отзывы
+2025-09-22 10:32:08.840 | INFO     | __main__:on_startup_callback:16 - BOT STARTING...
+2025-09-22 10:32:08.841 | INFO     | repository:enable_auto_update:66 - Update date for Users enabled
+2025-09-22 10:32:08.842 | INFO     | __main__:on_startup_callback:21 - BOT STARTED!.
+2025-09-22 10:32:12.207 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (29 строк) выгружен в MotusFreelance:Users
+2025-09-22 10:32:14.611 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из MotusFreelance:Отзывы
+2025-09-22 10:32:14.731 | INFO     | handlers.base:start:80 - command start
+2025-09-22 10:32:34.396 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 29 строк из MotusFreelance:Users
+2025-09-22 10:32:37.293 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из MotusFreelance:Отзывы
+2025-09-22 10:32:37.751 | INFO     | __main__:on_startup_callback:16 - BOT STARTING...
+2025-09-22 10:32:37.752 | INFO     | repository:enable_auto_update:66 - Update date for Users enabled
+2025-09-22 10:32:37.754 | INFO     | __main__:on_startup_callback:21 - BOT STARTED!.
+2025-09-22 10:32:40.883 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (29 строк) выгружен в MotusFreelance:Users
+2025-09-22 10:32:44.039 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из MotusFreelance:Отзывы
+2025-09-22 10:32:44.165 | INFO     | handlers.base:start:80 - command start
+2025-09-22 10:32:47.019 | INFO     | handlers.base:button_callback:96 - button click development
+2025-09-22 10:32:49.578 | INFO     | handlers.base:start:80 - command start
+2025-09-22 10:32:50.977 | INFO     | handlers.base:button_callback:120 - button click reviews
+2025-09-22 10:35:45.635 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 29 строк из MotusFreelance:Users
+2025-09-22 10:35:49.331 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из MotusFreelance:Отзывы
+2025-09-22 10:35:49.663 | INFO     | __main__:on_startup_callback:16 - BOT STARTING...
+2025-09-22 10:35:49.664 | INFO     | repository:enable_auto_update:66 - Update date for Users enabled
+2025-09-22 10:35:49.664 | INFO     | __main__:on_startup_callback:21 - BOT STARTED!.
+2025-09-22 10:35:53.522 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (29 строк) выгружен в MotusFreelance:Users
+2025-09-22 10:35:56.294 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из MotusFreelance:Отзывы
+2025-09-22 10:35:56.409 | INFO     | handlers.base:button_callback:120 - button click reviews
+2025-09-22 10:36:46.774 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 29 строк из MotusFreelance:Users
+2025-09-22 10:36:49.345 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из MotusFreelance:Отзывы
+2025-09-22 10:36:49.754 | INFO     | __main__:on_startup_callback:16 - BOT STARTING...
+2025-09-22 10:36:49.755 | INFO     | repository:enable_auto_update:66 - Update date for Users enabled
+2025-09-22 10:36:49.757 | INFO     | __main__:on_startup_callback:21 - BOT STARTED!.
+2025-09-22 10:36:53.608 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (29 строк) выгружен в MotusFreelance:Users
+2025-09-22 10:36:55.583 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из MotusFreelance:Отзывы
+2025-09-22 10:36:55.705 | INFO     | handlers.base:start:80 - command start
+2025-09-22 10:36:58.204 | INFO     | handlers.base:button_callback:120 - button click reviews
+2025-09-22 10:37:08.804 | INFO     | handlers.base:button_callback:90 - button click menu
+2025-09-22 10:37:14.454 | INFO     | handlers.base:button_callback:120 - button click reviews
+2025-09-22 10:37:16.779 | INFO     | handlers.base:button_callback:90 - button click menu

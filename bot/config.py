@@ -1,34 +1,25 @@
-import sys
 from typing import List
-
-from aiogram.client.default import DefaultBotProperties
-from aiogram.enums import ParseMode
-from loguru import logger
-
 from pydantic import SecretStr
 from pydantic_settings import BaseSettings, SettingsConfigDict
-
-# Настройка логирования
-logger.remove()
-
-# Логи в консоль
-logger.add(
-    sys.stdout,
-    format="<green>{time:YYYY-MM-DD HH:mm:ss}</green> | "
-    "<level>{level}</level> | "
-    "{name}:{function}:{line} - {message}",
-    level="INFO",
-)
-
-# Логи в файл (ротация каждый день, хранение 7 дней)
-logger.add("logs/bot.log", rotation="1 day", retention="7 days", encoding="utf-8")
+from aiogram.client.default import DefaultBotProperties
+from aiogram.enums import ParseMode
 
 
 class Settings(BaseSettings):
+    """
+    Application configuration loaded from environment variables.
+    Uses Pydantic for validation and type safety.
+    """
+
+    # Bot
     BOT_TOKEN: SecretStr
     ADMINS: List[int]
 
-    # Google Forms
+    # AutoUpdate
+    UPLOAD_DELAY_MINUTS: int
+    LOAD_DELAY_MINUTS: int
+
+    # Google Forms URLs
     DEVELOPMENT_FORM_URL: str
     TRAINING_FORM_URL: str
     FEEDBACK_FORM_URL: str
@@ -37,7 +28,7 @@ class Settings(BaseSettings):
     CREDENTIALS_PATH: str
     SHEET_NAME: str
 
-    # worksheets
+    # Worksheets
     REVIEWS_WORKSHEET: str
     USERS_WORKSHEET: str
 
@@ -50,4 +41,10 @@ class Settings(BaseSettings):
 
 settings = Settings()
 
-default_bot_properties = DefaultBotProperties(parse_mode=ParseMode.MARKDOWN)
+
+def get_default_bot_properties() -> DefaultBotProperties:
+    """
+    Returns default bot properties for Aiogram.
+    Currently sets the default parse mode to MARKDOWN.
+    """
+    return DefaultBotProperties(parse_mode=ParseMode.MARKDOWN)

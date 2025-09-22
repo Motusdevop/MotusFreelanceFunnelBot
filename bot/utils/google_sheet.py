@@ -1,90 +1,79 @@
 import gspread
-import loguru
 import pandas as pd
-from typing import List, Dict, Optional, Any
-
+from typing import List, Dict, Any
 from gspread import Client, Worksheet
-
-from config import logger
+from loguru import logger
 
 
 class GoogleSheet:
+    """
+    Wrapper for interacting with Google Sheets via gspread.
+    Provides methods to load and upload data as Pandas DataFrames.
+    """
+
     def __init__(self, creds_path: str, sheet_name: str):
         self.creds_path = creds_path
         self.sheet_name = sheet_name
         self.client = self._authorize()
 
     def _authorize(self) -> Client:
-        # Используем полный доступ к таблицам (чтение + запись)
-        return gspread.service_account(filename=self.creds_path)
+        """
+        Authorize and return a gspread client using service account credentials.
+        """
+        try:
+            return gspread.service_account(filename=self.creds_path)
+        except Exception as e:
+            logger.error(f"Authorization failed: {e}")
+            raise
 
     def _open_sheet(self, worksheet: str) -> Worksheet:
+        """
+        Open worksheet by name.
+        """
         try:
             spreadsheet = self.client.open(self.sheet_name)
-            return spreadsheet.worksheet(worksheet)  # Первая вкладка по умолчанию
+            return spreadsheet.worksheet(worksheet)
         except Exception as e:
-            raise Exception(f"Ошибка при открытии таблицы: {e}")
+            logger.error(f"Failed to open worksheet '{worksheet}' in '{self.sheet_name}': {e}")
+            raise
 
     def load_to_dataframe(self, worksheet: str) -> pd.DataFrame:
         """
-        Загружает данные из Google Sheets в pandas.DataFrame.
+        Load data from worksheet into a Pandas DataFrame.
         """
         ws = self._open_sheet(worksheet)
         data: List[Dict[str, Any]] = ws.get_all_records()
-        logger.info(
-            f"Загружено {len(data)} строк из "
-            f"{self.sheet_name}:{worksheet or 'sheet1'}"
-        )
+        logger.info(f"Loaded {len(data)} rows from {self.sheet_name}:{worksheet}")
         return pd.DataFrame(data)
 
+    def _prepare_dataframe_for_upload(self, dataframe: pd.DataFrame) -> List[List[Any]]:
+        """
+        Prepare DataFrame values for uploading (convert dates, add headers).
+        """
+        df_copy = dataframe.copy()
+        for col in df_copy.columns:
+            df_copy[col] = df_copy[col].apply(
+                lambda x: x.strftime("%d.%m.%y %H:%M") if hasattr(x, "strftime") else x
+            )
+        return [list(df_copy.columns)] + df_copy.values.tolist()
+
     def upload_dataframe(
-            self,
-            worksheet: str,
-            dataframe: pd.DataFrame,
-            include_header: bool = True,
+        self,
+        worksheet: str,
+        dataframe: pd.DataFrame,
+        include_header: bool = True,
     ) -> None:
         """
-        Загружает DataFrame в Google Sheets (заменяет содержимое листа).
-        :param dataframe: DataFrame для загрузки
-        :param include_header: выгружать ли заголовки столбцов
+        Upload DataFrame to worksheet (overwrite existing content).
         """
         ws = self._open_sheet(worksheet)
         ws.clear()
 
-        # Преобразуем даты в строки (YYYY-MM-DD)
-        dataframe = dataframe.copy()
-        for col in dataframe.columns:
-            dataframe[col] = dataframe[col].apply(
-                lambda x: x.strftime("%d.%m.%y %H:%M") if hasattr(x, "strftime") else x
-            )
-
-        # Формируем данные для выгрузки
-        values: List[List[Any]] = []
-        if include_header:
-            values.append(list(dataframe.columns))
-        values.extend(dataframe.values.tolist())
-
-        ws.update(values, "A1")
-        logger.info(
-            f"DataFrame ({len(dataframe)} строк) выгружен в "
-            f"{self.sheet_name}:{worksheet or 'sheet1'}"
+        values: List[List[Any]] = (
+            self._prepare_dataframe_for_upload(dataframe)
+            if include_header
+            else dataframe.values.tolist()
         )
 
-
-if __name__ == "__main__":
-    # Настройки
-    CREDS_FILE = "../../credentials.json"
-    SHEET_NAME = "Test"
-
-    # Создаём объект
-    gs = GoogleSheet(creds_path=CREDS_FILE, sheet_name=SHEET_NAME)
-
-    df = gs.load_to_dataframe(worksheet='Users')
-
-    print(df.head())
-
-    df.loc[len(df)] = ['Motus', '12:00']
-
-    print(df.head())
-
-    gs.upload_dataframe(worksheet='Users', dataframe=df)
+        ws.update(values, "A1")
+        logger.info(f"Uploaded {len(dataframe)} rows to {self.sheet_name}:{worksheet}")

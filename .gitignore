@@ -4,6 +4,9 @@ __pycache__/
 .env
 test.env
 
+*.log
+logs
+
 .env.prod
 .env.dev
 

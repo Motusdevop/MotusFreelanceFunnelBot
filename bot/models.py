@@ -1,9 +1,12 @@
 from datetime import datetime
-
 from pydantic import BaseModel
 
 
 class User(BaseModel):
+    """
+    Represents a bot user entity.
+    """
+
     chat_id: int
     first_name: str | None
     last_name: str | None
@@ -14,7 +17,11 @@ class User(BaseModel):
 
 
 class Review(BaseModel):
-    date: datetime
+    """
+    Represents a customer review entity.
+    """
+
+    date: str
     name: str
     service: str
     grade: int
