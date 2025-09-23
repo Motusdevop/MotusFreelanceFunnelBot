@@ -4,6 +4,12 @@ __pycache__/
 .env
 test.env
 
+*.log
+logs
+
+.env.prod
+.env.dev
+
 bot/__pycache__/
 bot/handlers/__pycache__/
 bot/utils/__pycache__/

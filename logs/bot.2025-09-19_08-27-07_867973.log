@@ -1,0 +1,148 @@
+2025-09-18 08:57:15.253 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-18 08:57:15.261 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-18 09:39:23.360 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-18 09:39:23.362 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-18 09:42:19.553 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-18 09:42:19.554 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-18 09:42:56.242 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-18 09:42:56.244 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-18 09:44:02.746 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-18 09:44:02.748 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-18 09:44:58.713 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-18 09:44:58.714 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-18 09:52:02.655 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-18 09:52:02.656 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-18 09:52:43.845 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-18 09:52:43.846 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-18 09:56:45.613 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из Test:Users
+2025-09-18 09:56:51.136 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из Test:Users
+2025-09-18 09:56:56.934 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из Test:Users
+2025-09-18 09:57:02.286 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из Test:Users
+2025-09-18 09:57:08.019 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из Test:Users
+2025-09-18 09:57:14.174 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из Test:Users
+2025-09-18 09:57:22.570 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из Test:Users
+2025-09-18 09:57:34.340 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из Test:Users
+2025-09-18 09:57:41.531 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из Test:Users
+2025-09-18 09:57:42.118 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-18 09:57:42.118 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-19 07:45:54.981 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из Test:Users
+2025-09-19 07:45:55.255 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-19 07:45:55.256 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-19 07:46:42.016 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из Test:Users
+2025-09-19 07:46:42.275 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-19 07:46:42.275 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-19 07:49:31.590 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из Test:Users
+2025-09-19 07:49:31.915 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-19 07:49:31.916 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-19 07:49:42.677 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из Test:Users
+2025-09-19 07:49:42.957 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-19 07:49:42.957 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-19 07:50:01.495 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из Test:Users
+2025-09-19 07:50:01.950 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-19 07:50:01.950 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-19 07:51:41.347 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из Test:Users
+2025-09-19 07:51:41.755 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-19 07:51:41.756 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-19 07:52:29.473 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из Test:Users
+2025-09-19 07:52:29.926 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-19 07:52:29.927 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-19 07:53:31.418 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из Test:Users
+2025-09-19 07:53:31.701 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-19 07:53:31.702 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-19 07:53:38.689 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (0 строк) выгружен в Test:Users
+2025-09-19 07:54:50.880 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 0 строк из Test:Users
+2025-09-19 07:54:51.165 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-19 07:54:51.166 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-19 07:54:58.779 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (0 строк) выгружен в Test:Users
+2025-09-19 07:58:49.507 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 0 строк из Test:Users
+2025-09-19 07:58:54.687 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 0 строк из Test:Users
+2025-09-19 07:58:58.926 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 0 строк из Test:Users
+2025-09-19 07:59:03.740 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 0 строк из Test:Users
+2025-09-19 07:59:08.450 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 0 строк из Test:Users
+2025-09-19 07:59:14.651 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 0 строк из Test:Users
+2025-09-19 07:59:22.377 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 0 строк из Test:Users
+2025-09-19 07:59:33.436 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 0 строк из Test:Users
+2025-09-19 07:59:50.607 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 0 строк из Test:Users
+2025-09-19 08:00:20.625 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 0 строк из Test:Users
+2025-09-19 08:00:44.810 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 0 строк из Test:Users
+2025-09-19 08:00:45.166 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-19 08:00:45.166 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-19 08:00:51.058 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (0 строк) выгружен в Test:Users
+2025-09-19 08:04:00.568 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 0 строк из Test:Users
+2025-09-19 08:04:00.928 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-19 08:04:00.928 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-19 08:05:39.833 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 0 строк из Test:Users
+2025-09-19 08:05:40.199 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-19 08:05:40.199 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-19 08:07:40.056 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 0 строк из Test:Users
+2025-09-19 08:07:40.342 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-19 08:07:40.342 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-19 08:07:43.786 | WARNING  | utils.business:append:46 - {'chat_id': 700178752, 'first_name': 'Motus', 'last_name': None, 'username': '@Kapchonka77', 'last_activity': '19.09 08:07', 'command': 'start'}
+2025-09-19 08:07:43.787 | WARNING  | utils.business:append:47 - Empty DataFrame
+Columns: [chat_id, first_name, last_name, username, last_activity, command]
+Index: []
+2025-09-19 08:09:14.894 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 0 строк из Test:Users
+2025-09-19 08:09:15.294 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-19 08:09:15.294 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-19 08:09:16.557 | WARNING  | utils.business:append:46 - {'chat_id': 700178752, 'first_name': 'Motus', 'last_name': None, 'username': '@Kapchonka77', 'last_activity': '19.09 08:09', 'command': 'start'}
+2025-09-19 08:09:16.557 | WARNING  | utils.business:append:47 - Empty DataFrame
+Columns: [chat_id, first_name, last_name, username, last_activity, command]
+Index: []
+2025-09-19 08:09:20.153 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (1 строк) выгружен в Test:Users
+2025-09-19 08:09:46.542 | WARNING  | utils.business:append:46 - {'chat_id': 700178752, 'first_name': 'Motus', 'last_name': None, 'username': '@Kapchonka77', 'last_activity': '19.09 08:09', 'command': 'start'}
+2025-09-19 08:09:46.543 | WARNING  | utils.business:append:47 -      chat_id first_name last_name      username last_activity command
+0  700178752      Motus      None  @Kapchonka77   19.09 08:09   start
+2025-09-19 08:09:49.494 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (2 строк) выгружен в Test:Users
+2025-09-19 08:12:27.971 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 2 строк из Test:Users
+2025-09-19 08:12:28.307 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-19 08:12:28.308 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-19 08:12:36.403 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (3 строк) выгружен в Test:Users
+2025-09-19 08:13:18.759 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 3 строк из Test:Users
+2025-09-19 08:13:19.018 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-19 08:13:19.018 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-19 08:13:25.964 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 3 строк из Test:Users
+2025-09-19 08:13:26.236 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-19 08:13:26.237 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-19 08:13:32.323 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (4 строк) выгружен в Test:Users
+2025-09-19 08:15:43.529 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 4 строк из Test:Users
+2025-09-19 08:15:43.787 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-19 08:15:43.787 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-19 08:15:53.236 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (5 строк) выгружен в Test:Users
+2025-09-19 08:16:08.527 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 0 строк из Test:Users
+2025-09-19 08:16:08.875 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-19 08:16:08.876 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-19 08:16:18.995 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (1 строк) выгружен в Test:Users
+2025-09-19 08:17:09.413 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 1 строк из Test:Users
+2025-09-19 08:17:09.724 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-19 08:17:09.725 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-19 08:17:14.323 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (2 строк) выгружен в Test:Users
+2025-09-19 08:18:33.555 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 2 строк из Test:Users
+2025-09-19 08:18:33.830 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-19 08:18:33.831 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-19 08:18:36.989 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (3 строк) выгружен в Test:Users
+2025-09-19 08:19:38.511 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 3 строк из Test:Users
+2025-09-19 08:19:38.764 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-19 08:19:38.764 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-19 08:19:56.536 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 3 строк из Test:Users
+2025-09-19 08:19:56.915 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-19 08:19:56.916 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-19 08:20:00.938 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (4 строк) выгружен в Test:Users
+2025-09-19 08:20:06.349 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (5 строк) выгружен в Test:Users
+2025-09-19 08:20:20.906 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (6 строк) выгружен в Test:Users
+2025-09-19 08:23:32.556 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 6 строк из Test:Users
+2025-09-19 08:23:33.112 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-19 08:23:33.113 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-19 08:24:32.000 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 6 строк из Test:Users
+2025-09-19 08:24:32.282 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-19 08:24:32.283 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-19 08:24:58.690 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 6 строк из Test:Users
+2025-09-19 08:24:59.099 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-19 08:24:59.099 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-19 08:25:39.180 | INFO     | utils.google_sheet:load_to_dataframe:34 - Загружено 0 строк из Test:Users
+2025-09-19 08:25:39.466 | INFO     | __main__:on_startup_callback:14 - BOT STARTING...
+2025-09-19 08:25:39.467 | INFO     | __main__:on_startup_callback:16 - BOT STARTED!.
+2025-09-19 08:25:43.466 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (1 строк) выгружен в Test:Users
+2025-09-19 08:25:50.098 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (2 строк) выгружен в Test:Users
+2025-09-19 08:27:02.931 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (3 строк) выгружен в Test:Users
+2025-09-19 08:27:05.603 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (4 строк) выгружен в Test:Users
+2025-09-19 08:27:07.866 | INFO     | utils.google_sheet:upload_dataframe:68 - DataFrame (5 строк) выгружен в Test:Users

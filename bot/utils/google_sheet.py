@@ -1,64 +1,79 @@
 import gspread
-from google.oauth2.service_account import Credentials
-from typing import List, Dict
+import pandas as pd
+from typing import List, Dict, Any
+from gspread import Client, Worksheet
+from loguru import logger
 
 
 class GoogleSheet:
-    def __init__(self, creds_path: str, sheet_name: str, worksheet_index: int = 0):
+    """
+    Wrapper for interacting with Google Sheets via gspread.
+    Provides methods to load and upload data as Pandas DataFrames.
+    """
+
+    def __init__(self, creds_path: str, sheet_name: str):
         self.creds_path = creds_path
         self.sheet_name = sheet_name
-        self.worksheet_index = worksheet_index
         self.client = self._authorize()
-        self.sheet = self._open_sheet()
 
-    def _authorize(self):
-        # Используем полный доступ к таблицам (чтение + запись)
-        return gspread.service_account(filename=self.creds_path)
+    def _authorize(self) -> Client:
+        """
+        Authorize and return a gspread client using service account credentials.
+        """
+        try:
+            return gspread.service_account(filename=self.creds_path)
+        except Exception as e:
+            logger.error(f"Authorization failed: {e}")
+            raise
 
-    def _open_sheet(self):
+    def _open_sheet(self, worksheet: str) -> Worksheet:
+        """
+        Open worksheet by name.
+        """
         try:
             spreadsheet = self.client.open(self.sheet_name)
-            return spreadsheet.get_worksheet(self.worksheet_index)  # Первая вкладка по умолчанию
+            return spreadsheet.worksheet(worksheet)
         except Exception as e:
-            raise Exception(f"Ошибка при открытии таблицы: {e}")
+            logger.error(f"Failed to open worksheet '{worksheet}' in '{self.sheet_name}': {e}")
+            raise
 
-    def read_all_records(self) -> List[Dict]:
-        """Читает все строки как список словарей"""
-        try:
-            return self.sheet.get_all_records()
-        except Exception as e:
-            raise Exception(f"Ошибка при чтении данных: {e}")
+    def load_to_dataframe(self, worksheet: str) -> pd.DataFrame:
+        """
+        Load data from worksheet into a Pandas DataFrame.
+        """
+        ws = self._open_sheet(worksheet)
+        data: List[Dict[str, Any]] = ws.get_all_records()
+        logger.info(f"Loaded {len(data)} rows from {self.sheet_name}:{worksheet}")
+        return pd.DataFrame(data)
 
-    def append_row(self, row_values: List[str]):
-        """Добавляет новую строку в таблицу"""
-        try:
-            self.sheet.append_row(row_values)
-        except Exception as e:
-            raise Exception(f"Ошибка при добавлении строки: {e}")
+    def _prepare_dataframe_for_upload(self, dataframe: pd.DataFrame) -> List[List[Any]]:
+        """
+        Prepare DataFrame values for uploading (convert dates, add headers).
+        """
+        df_copy = dataframe.copy()
+        for col in df_copy.columns:
+            df_copy[col] = df_copy[col].apply(
+                lambda x: x.strftime("%d.%m.%y %H:%M") if hasattr(x, "strftime") else x
+            )
+        return [list(df_copy.columns)] + df_copy.values.tolist()
 
-    def update_cell(self, row: int, col: int, value: str):
-        """Изменяет значение в одной ячейке"""
-        try:
-            self.sheet.update_cell(row, col, value)
-        except Exception as e:
-            raise Exception(f"Ошибка при обновлении ячейки: {e}")
+    def upload_dataframe(
+        self,
+        worksheet: str,
+        dataframe: pd.DataFrame,
+        include_header: bool = True,
+    ) -> None:
+        """
+        Upload DataFrame to worksheet (overwrite existing content).
+        """
+        ws = self._open_sheet(worksheet)
+        ws.clear()
 
+        values: List[List[Any]] = (
+            self._prepare_dataframe_for_upload(dataframe)
+            if include_header
+            else dataframe.values.tolist()
+        )
 
-if __name__ == "__main__":
-    # Настройки
-    CREDS_FILE = "../../credentials.json"
-    SHEET_NAME = "Test"
-
-    # Создаём объект
-    gs = GoogleSheet(creds_path=CREDS_FILE, sheet_name=SHEET_NAME)
-
-    # 🔹 Чтение всех записей
-    responses = gs.read_all_records()
-    for r in responses:
-        print(r)
-
-    # 🔹 Добавление строки
-    # gs.append_row(["22.08.2025 12:45", "Иван", "+79990001122", "Хочу бота для консультаций"])
-    #
-    # # 🔹 Обновление ячейки (например, 2-я строка, 4-й столбец)
-    # gs.update_cell(row=2, col=4, value="Комментарий обновлён")
+        ws.update(values, "A1")
+        logger.info(f"Uploaded {len(dataframe)} rows to {self.sheet_name}:{worksheet}")

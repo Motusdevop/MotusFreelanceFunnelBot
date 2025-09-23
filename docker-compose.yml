@@ -10,6 +10,6 @@ services:
       - ./credentials.json:/app/credentials.json
 
     env_file:
-      - ./.env
+      - ${ENV_FILE}
 
     restart: always
