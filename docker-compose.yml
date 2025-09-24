@@ -7,7 +7,6 @@ services:
 
     volumes:
       - ./logs:/app/logs
-      - ./credentials.json:/app/credentials.json
 
     env_file:
       - ${ENV_FILE}
