@@ -103,7 +103,7 @@ class ReviewTable(Table):
         """
         df = self.get_dataframe()
         reviews = [models.Review(**row) for row in df.to_dict("records")]
-        return sorted(reviews, key=lambda r: r.date, reverse=True)
+        return sorted(reviews, key=lambda r: r.date)
 
 
 # Global table instances

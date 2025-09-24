@@ -21,4 +21,4 @@ bot/utils/__pycache__/*
 */__pycache__/*
 
 
-credentials.json
+bot/credentials.json
