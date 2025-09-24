@@ -15,4 +15,6 @@ async def show_contact(callback_query: CallbackQuery):
     """
     logger.info(f"Contact button from {callback_query.from_user.id}")
     await callback_query.message.edit_text(text=contact_text)
-    await callback_query.message.edit_reply_markup(reply_markup=BackToMenuInlineKeyboard())
+    await callback_query.message.edit_reply_markup(
+        reply_markup=BackToMenuInlineKeyboard()
+    )

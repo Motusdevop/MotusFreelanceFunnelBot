@@ -5,10 +5,14 @@ def format_review(review: Review) -> str:
     """
     Format review entity into human-readable text for Telegram.
     """
-    date_str = review.date.strftime('%d.%m.%Y %H:%M') if hasattr(review.date, "strftime") else str(review.date)
+    date_str = (
+        review.date.strftime("%d.%m.%Y %H:%M")
+        if hasattr(review.date, "strftime")
+        else str(review.date)
+    )
     return (
         f"<b>{review.name}</b> — {review.service}\n"
-        f"Оценка: {review.grade}/5\n"
+        f"Оценка: {review.grade}/5 {''.join(['⭐' for _ in range(review.grade)])}\n"
         f"<i>{date_str}</i>\n\n"
         f"{review.review}\n\n"
         f"{review.additionally or ''}"

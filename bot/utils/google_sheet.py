@@ -34,7 +34,9 @@ class GoogleSheet:
             spreadsheet = self.client.open(self.sheet_name)
             return spreadsheet.worksheet(worksheet)
         except Exception as e:
-            logger.error(f"Failed to open worksheet '{worksheet}' in '{self.sheet_name}': {e}")
+            logger.error(
+                f"Failed to open worksheet '{worksheet}' in '{self.sheet_name}': {e}"
+            )
             raise
 
     def load_to_dataframe(self, worksheet: str) -> pd.DataFrame:

@@ -14,10 +14,14 @@ class Table:
     Handles loading, uploading and local caching of dataframe.
     """
 
-    def __init__(self, spreadsheet_name: str, worksheet: str, model: BaseModel, creds_path: str):
+    def __init__(
+        self, spreadsheet_name: str, worksheet: str, model: BaseModel, creds_path: str
+    ):
         self.model = model
         self.worksheet = worksheet
-        self._google_sheet = GoogleSheet(creds_path=creds_path, sheet_name=spreadsheet_name)
+        self._google_sheet = GoogleSheet(
+            creds_path=creds_path, sheet_name=spreadsheet_name
+        )
         self.df = self._load_data()
         self.auto_upload_task = None
         self.auto_load_task = None
@@ -62,8 +66,12 @@ class Table:
         Upload local dataframe to Google Sheets.
         """
         try:
-            self._google_sheet.upload_dataframe(self.worksheet, self.df, include_header=True)
-            logger.info(f"Data uploaded to worksheet '{self.worksheet}', rows={len(self.df)}")
+            self._google_sheet.upload_dataframe(
+                self.worksheet, self.df, include_header=True
+            )
+            logger.info(
+                f"Data uploaded to worksheet '{self.worksheet}', rows={len(self.df)}"
+            )
         except Exception as e:
             logger.error(f"Error uploading data to worksheet '{self.worksheet}': {e}")
 
@@ -89,7 +97,9 @@ class Table:
         """
         new_row_df = pd.DataFrame([data.model_dump()])
         self.df = pd.concat([self.df, new_row_df], ignore_index=True)
-        logger.info(f"New row appended to '{self.worksheet}', total rows={len(self.df)}")
+        logger.info(
+            f"New row appended to '{self.worksheet}', total rows={len(self.df)}"
+        )
 
 
 class ReviewTable(Table):
@@ -104,6 +114,15 @@ class ReviewTable(Table):
         df = self.get_dataframe()
         reviews = [models.Review(**row) for row in df.to_dict("records")]
         return sorted(reviews, key=lambda r: r.date)
+
+    def get_average_grade(self) -> float | None:
+        """
+        Returns average grade from reviews, or None if no reviews.
+        """
+        df = self.get_dataframe()
+        if df.empty or "grade" not in df.columns:
+            return None
+        return df["grade"].mean() if not df["grade"].isnull().all() else None
 
 
 # Global table instances

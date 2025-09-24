@@ -38,7 +38,9 @@ async def paginate_reviews(callback_query: CallbackQuery):
     reviews = REVIEWS_TABLE.get_reviews()
 
     if 0 <= index < len(reviews):
-        logger.info(f"User {callback_query.from_user.id} viewing review {index + 1}/{len(reviews)}")
+        logger.info(
+            f"User {callback_query.from_user.id} viewing review {index + 1}/{len(reviews)}"
+        )
         await callback_query.message.edit_text(
             text=format_review(reviews[index]),
             reply_markup=ReviewInlineKeyboard(index, len(reviews)),

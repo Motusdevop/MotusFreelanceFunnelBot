@@ -1,5 +1,5 @@
 from aiogram import BaseMiddleware
-from aiogram.types import Message, CallbackQuery
+from aiogram.types import CallbackQuery
 from datetime import datetime
 from zoneinfo import ZoneInfo
 from loguru import logger
@@ -35,9 +35,15 @@ class ActivityLoggerMiddleware(BaseMiddleware):
         )
 
         await USERS_TABLE.append(client)
-        logger.info(f"User {client.chat_id} activity saved: command={command}, callback={callback_data}")
+        logger.info(
+            f"User {client.chat_id} activity saved: command={command}, callback={callback_data}"
+        )
 
-        if callback_data and callback_data not in ("menu", "about") and not callback_data.startswith("review:"):
+        if (
+            callback_data
+            and callback_data not in ("menu", "about")
+            and not callback_data.startswith("review:")
+        ):
             text = (
                 "User activity:\n\n"
                 f"first_name: {client.first_name}\nlast_name: {client.last_name}\n"

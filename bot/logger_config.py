@@ -14,8 +14,8 @@ def setup_logger() -> None:
     logger.add(
         sys.stdout,
         format="<green>{time:YYYY-MM-DD HH:mm:ss}</green> | "
-               "<level>{level}</level> | "
-               "{name}:{function}:{line} - {message}",
+        "<level>{level}</level> | "
+        "{name}:{function}:{line} - {message}",
         level="INFO",
     )
 

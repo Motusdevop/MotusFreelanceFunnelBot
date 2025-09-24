@@ -3,7 +3,6 @@ from aiogram import Bot, Dispatcher
 
 import handlers.init
 from config import settings, get_default_bot_properties
-from handlers import base, development, reviews
 from logger_config import setup_logger
 from loguru import logger
 
